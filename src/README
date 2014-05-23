@@ -1,0 +1,40 @@
+-----------------------
+ Introduction
+-----------------------
+This suite is to check system core processes.
+# Usage for each file (under ivi-dist-bat-tests folder):
+<sub-folder>   <usage>
+src            source file of the cases
+
+# Needed package/command
+gcc make  --- common packages for make 
+autoconf --- A GNU Tool for Automatically Configuring Source Code
+automake --- A Program for Automatically Generating GNU-Style Makefile.in Files
+rpm-build --- for packaging
+
+-----------------------
+Build and Run
+-----------------------
+(Suppose you only get the source code and testkit-lite has been setup on your test machine
+ if you have got ivi-dist-bat-tests RPM, you can directly go to step.4 on testing machine
+ if you don't have testkit-lite, you can get it from https://github.com/testkit/testkit-lite)
+
+Steps:
+1. cd ivi-dist-bat-tests
+2. sh pack.sh    --- It will make and generate the ivi-dist-bat-tests RPM
+3. rpm -ivh ivi-dist-bat-tests-0.1.0-1.i386.rpm    --- install RPM to your testing machine 
+
+To run cases, you can either do step.5 or step.6
+4. testkit-lite -f /opt/ivi-dist-bat-tests/tests.xml --comm localhost -o ./results.xml
+
+
+-----------------------
+Common Install
+-----------------------
+./autogen
+./configure
+make && make install
+
+-----------------------
+TODO
+-----------------------
