@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<test_definition>
+    <suite name="00-common/A0-sanity">
+        <set name="common/sanity/core">
+            <testcase id="00-A0-00-01-bluetoothd" name="01-bluetoothd" priority="P1" execution_type="auto" component="common/sanity/core" status="designed" type="functional_positive" purpose="Objective: check bluetoothd daemon launching - Description: Check if the bluetoothd daemon is launched">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: check bluetoothd daemon launching - Description: Check if the bluetoothd daemon is launched]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";checkprocess.sh bluetoothd;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-A0-00-02-connmand" name="02-connmand" priority="P1" execution_type="auto" component="common/sanity/core" status="designed" type="functional_positive" purpose="Objective: check connmand daemon launching - Description: Check if the connmand daemon is launched">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: check connmand daemon launching - Description: Check if the connmand daemon is launched]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";checkprocess.sh connmand;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-A0-00-03-dbus-daemon" name="03-dbus-daemon" priority="P1" execution_type="auto" component="common/sanity/core" status="designed" type="functional_positive" purpose="Objective: check dbus-daemon launching - Description: Check if the dbus-daemon is launched">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: check dbus-daemon launching - Description: Check if the dbus-daemon is launched]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";checkprocess.sh dbus-daemon;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-A0-00-04-systemd-udevd" name="04-systemd-udevd" priority="P1" execution_type="auto" component="common/sanity/core" status="designed" type="functional_positive" purpose="Objective: check systemd-udevd daemon launching - Description: Check if the systemd-udevd daemon is launched">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: check systemd-udevd daemon launching - Description: Check if the systemd-udevd daemon is launched]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";checkprocess.sh systemd-udevd;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-A0-00-05-wpa_supplicant" name="05-wpa_supplicant" priority="P1" execution_type="auto" component="common/sanity/core" status="designed" type="functional_positive" purpose="Objective: check wpa_supplicant daemon launching - Description: Check if the wpa_supplicant daemon is launched">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: check wpa_supplicant daemon launching - Description: Check if the wpa_supplicant daemon is launched]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";checkprocess.sh wpa_supplicant;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-A0-00-06-weston" name="06-weston" priority="P1" execution_type="auto" component="common/sanity/core" status="designed" type="functional_positive" purpose="Objective: check weston-launch daemon launching - Description: Check if the weston daemon is launched">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: check weston-launch daemon launching - Description: Check if the weston daemon is launched]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";checkprocess.sh weston;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-A0-00-07-net-config" name="07-net-config" priority="P1" execution_type="auto" component="common/sanity/core" status="designed" type="functional_positive" purpose="Objective: check net-config daemon launching - Description: Check if net-config daemon is launched">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: check net-config daemon launching - Description: Check if net-config daemon is launched]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";checkprocess.sh net-config;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-A0-00-08-ofonod" name="08-ofonod" priority="P1" execution_type="auto" component="common/sanity/core" status="designed" type="functional_positive" purpose="Objective: check ofonod daemon launching - Description: Check if ofonod daemon is launched">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: check ofonod daemon launching - Description: Check if ofonod daemon is launched]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";checkprocess.sh ofonod;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+        </set>
+        <set name="common/sanity/gui">
+            <testcase id="00-A0-01-01-weston-desktop-shell" name="01-weston-desktop-shell" priority="P0" execution_type="auto" component="common/sanity/gui" status="designed" type="functional_positive" purpose="Objective: Check if weston desktop is shown - Description: Check if the weston-desktop-shell process is launched">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: Check if weston desktop is shown - Description: Check if the weston-desktop-shell process is launched]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/01-gui;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/01-gui:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";checkprocess.sh weston-desktop-shell;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+        </set>
+        <set name="common/sanity/multimedia">
+            <testcase id="00-A0-02-01-audio-ogg" name="01-audio-ogg" priority="P1" execution_type="auto" component="common/sanity/multimedia" status="designed" type="functional_positive" purpose="Objective: Check if an audio ogg file can be played - Description: Check if an audio ogg file can be played using gst-play">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: Check if an audio ogg file can be played - Description: Check if an audio ogg file can be played using gst-play]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/02-multimedia;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/02-multimedia:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";init.sh cigale.ogg;runme.sh gst.sh cigale.ogg;rc=$?;post.sh cigale.ogg;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-A0-02-02-video-ogg" name="02-video-ogg" priority="P1" execution_type="auto" component="common/sanity/multimedia" status="designed" type="functional_positive" purpose="Objective: Check if an video ogg file can be played - Description: Check if an video ogg file can be played using gst-play">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: Check if an video ogg file can be played - Description: Check if an video ogg file can be played using gst-play]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/02-multimedia;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/02-multimedia:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";init.sh short-big_buck_bunny_1080p.ogg;runme.sh gst.sh short-big_buck_bunny_1080p.ogg;rc=$?;post.sh short-big_buck_bunny_1080p.ogg;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+        </set>
+        <set name="common/sanity/system">
+            <testcase id="00-A0-03-01-smack" name="01-smack" priority="P1" execution_type="auto" component="common/sanity/system" status="designed" type="functional_positive" purpose="Objective: Check if smack is correctly enabled - Description: Check if security has been correctly enabled on the image">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: Check if smack is correctly enabled - Description: Check if security has been correctly enabled on the image]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/03-system;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/03-system:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";mount |grep smackfs;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-A0-03-02-zypper-install" name="02-zypper-install" priority="P0" execution_type="auto" component="common/sanity/system" status="designed" type="functional_positive" purpose="Objective: Checkk that zypper can  install a package - Description: Check that a package can be install with zypper ">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: Checkk that zypper can  install a package - Description: Check that a package can be install with zypper ]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/03-system;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/03-system:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";zypper -n in zypper-log;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+            <testcase id="00-A0-03-03-zypper-uninstall" name="03-zypper-uninstall" priority="P0" execution_type="auto" component="common/sanity/system" status="designed" type="functional_positive" purpose="Objective: Checkk that zypper can  uninstall a package - Description: Check that a package can be uninstall with zypper">
+                <description>
+                    <pre_condition>
+                    <![CDATA[Objective: Checkk that zypper can  uninstall a package - Description: Check that a package can be uninstall with zypper]]></pre_condition>
+                    <notes>
+                    <![CDATA[]]></notes>
+                    <test_script_entry test_script_expected_result="0" timeout="120">
+                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/03-system;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/03-system:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";zypper -n rm zypper-log;rc=$?;exit $rc]]></test_script_entry>
+                </description>
+            </testcase>
+        </set>
+    </suite>
+</test_definition>
