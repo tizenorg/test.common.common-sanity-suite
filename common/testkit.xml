@@ -62,16 +62,6 @@
                     <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";checkprocess.sh weston;rc=$?;exit $rc]]></test_script_entry>
                 </description>
             </testcase>
-            <testcase id="00-A0-00-07-net-config" name="07-net-config" priority="P1" execution_type="auto" component="common/sanity/core" status="designed" type="functional_positive" purpose="Objective: check net-config daemon launching - Description: Check if net-config daemon is launched">
-                <description>
-                    <pre_condition>
-                    <![CDATA[Objective: check net-config daemon launching - Description: Check if net-config daemon is launched]]></pre_condition>
-                    <notes>
-                    <![CDATA[]]></notes>
-                    <test_script_entry test_script_expected_result="0" timeout="120">
-                    <![CDATA[cd /usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core;export QAPATH="/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity/00-core:/usr/share/tests/common-sanity-suite/TESTDIR/00-common/A0-sanity:/usr/share/tests/common-sanity-suite/TESTDIR/00-common:/usr/share/tests/common-sanity-suite/TESTDIR";export PATH="$QAPATH:$PATH";checkprocess.sh net-config;rc=$?;exit $rc]]></test_script_entry>
-                </description>
-            </testcase>
             <testcase id="00-A0-00-08-ofonod" name="08-ofonod" priority="P1" execution_type="auto" component="common/sanity/core" status="designed" type="functional_positive" purpose="Objective: check ofonod daemon launching - Description: Check if ofonod daemon is launched">
                 <description>
                     <pre_condition>
