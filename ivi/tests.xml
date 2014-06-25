@@ -7,11 +7,11 @@
         <post_condition />
         <steps>
           <step order="1">
-            <step_desc>/opt/ivi-dist-bat-tests/prs_checker bluetoothd</step_desc>
+            <step_desc>/usr/share/tests/ivi-dist-bat-tests/prs_checker bluetoothd</step_desc>
             <expected>0</expected>
           </step>
         </steps>
-        <test_script_entry>/opt/ivi-dist-bat-tests/prs_checker bluetoothd</test_script_entry>
+        <test_script_entry>/usr/share/tests/ivi-dist-bat-tests/prs_checker bluetoothd</test_script_entry>
       </description>
       <categories>
         <category>IVI</category>
@@ -23,11 +23,11 @@
         <post_condition />
         <steps>
           <step order="1">
-            <step_desc>/opt/ivi-dist-bat-tests/prs_checker ofonod</step_desc>
+            <step_desc>/usr/share/tests/ivi-dist-bat-tests/prs_checker ofonod</step_desc>
             <expected>0</expected>
           </step>
         </steps>
-        <test_script_entry>/opt/ivi-dist-bat-tests/prs_checker ofonod</test_script_entry>
+        <test_script_entry>/usr/share/tests/ivi-dist-bat-tests/prs_checker ofonod</test_script_entry>
       </description>
       <categories>
         <category>IVI</category>
@@ -39,11 +39,11 @@
         <post_condition />
         <steps>
           <step order="1">
-            <step_desc>/opt/ivi-dist-bat-tests/prs_checker dbus</step_desc>
+            <step_desc>/usr/share/tests/ivi-dist-bat-tests/prs_checker dbus</step_desc>
             <expected>0</expected>
           </step>
         </steps>
-        <test_script_entry>/opt/ivi-dist-bat-tests/prs_checker dbus</test_script_entry>
+        <test_script_entry>/usr/share/tests/ivi-dist-bat-tests/prs_checker dbus</test_script_entry>
       </description>
       <categories>
         <category>IVI</category>
@@ -55,11 +55,11 @@
         <post_condition />
         <steps>
           <step order="1">
-            <step_desc>/opt/ivi-dist-bat-tests/prs_checker ambd</step_desc>
+            <step_desc>/usr/share/tests/ivi-dist-bat-tests/prs_checker ambd</step_desc>
             <expected>0</expected>
           </step>
         </steps>
-        <test_script_entry>/opt/ivi-dist-bat-tests/prs_checker ambd</test_script_entry>
+        <test_script_entry>/usr/share/tests/ivi-dist-bat-tests/prs_checker ambd</test_script_entry>
       </description>
       <categories>
         <category>IVI</category>
@@ -71,11 +71,11 @@
         <post_condition />
         <steps>
           <step order="1">
-            <step_desc>/opt/ivi-dist-bat-tests/prs_checker murphyd</step_desc>
+            <step_desc>/usr/share/tests/ivi-dist-bat-tests/prs_checker murphyd</step_desc>
             <expected>0</expected>
           </step>
         </steps>
-        <test_script_entry>/opt/ivi-dist-bat-tests/prs_checker murphyd</test_script_entry>
+        <test_script_entry>/usr/share/tests/ivi-dist-bat-tests/prs_checker murphyd</test_script_entry>
       </description>
       <categories>
         <category>IVI</category>
@@ -87,11 +87,11 @@
         <post_condition />
         <steps>
           <step order="1">
-            <step_desc>/opt/ivi-dist-bat-tests/prs_checker connmand</step_desc>
+            <step_desc>/usr/share/tests/ivi-dist-bat-tests/prs_checker connmand</step_desc>
             <expected>0</expected>
           </step>
         </steps>
-        <test_script_entry>/opt/ivi-dist-bat-tests/prs_checker connmand</test_script_entry>
+        <test_script_entry>/usr/share/tests/ivi-dist-bat-tests/prs_checker connmand</test_script_entry>
       </description>
       <categories>
         <category>IVI</category>
@@ -103,11 +103,11 @@
         <post_condition />
         <steps>
           <step order="1">
-            <step_desc>/opt/ivi-dist-bat-tests/prs_checker weston</step_desc>
+            <step_desc>/usr/share/tests/ivi-dist-bat-tests/prs_checker weston</step_desc>
             <expected>0</expected>
           </step>
         </steps>
-        <test_script_entry>/opt/ivi-dist-bat-tests/prs_checker weston</test_script_entry>
+        <test_script_entry>/usr/share/tests/ivi-dist-bat-tests/prs_checker weston</test_script_entry>
       </description>
       <categories>
         <category>IVI</category>
@@ -119,11 +119,11 @@
         <post_condition />
         <steps>
           <step order="1">
-            <step_desc>/opt/ivi-dist-bat-tests/prs_checker wpa_supplicant</step_desc>
+            <step_desc>/usr/share/tests/ivi-dist-bat-tests/prs_checker wpa_supplicant</step_desc>
             <expected>0</expected>
           </step>
         </steps>
-        <test_script_entry>/opt/ivi-dist-bat-tests/prs_checker wpa_supplicant</test_script_entry>
+        <test_script_entry>/usr/share/tests/ivi-dist-bat-tests/prs_checker wpa_supplicant</test_script_entry>
       </description>
       <categories>
         <category>IVI</category>
