@@ -25,14 +25,14 @@ cp %{SOURCE1001} .
 
 %install
 ## common-sanity-suite
-install -d %{buildroot}/%{_datadir}/tests/%{profile}/%{name}
-install -m 0755 runtest %{buildroot}/%{_datadir}/tests/%{profile}/%{name}
-install -m 644 *.xml %{buildroot}/%{_datadir}/tests/%{profile}/%{name}
-install -m 0644 LICENSE %{buildroot}/%{_datadir}/tests/%{profile}/%{name}
-cp -r TESTDIR %{buildroot}/%{_datadir}/tests/%{profile}/%{name}
+install -d %{buildroot}/%{_datadir}/tests/common/%{name}
+install -m 0755 runtest %{buildroot}/%{_datadir}/tests/common/%{name}
+install -m 644 *.xml %{buildroot}/%{_datadir}/tests/common/%{name}
+install -m 0644 LICENSE %{buildroot}/%{_datadir}/tests/common/%{name}
+cp -r TESTDIR %{buildroot}/%{_datadir}/tests/common/%{name}
 
 
 %files
 %manifest %{name}.manifest
 %defattr(-,root,root)
-%{_datadir}/tests/%{profile}/%{name}
+%{_datadir}/tests/common/%{name}
