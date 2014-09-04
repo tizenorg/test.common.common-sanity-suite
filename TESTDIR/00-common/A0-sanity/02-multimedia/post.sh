@@ -15,6 +15,11 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 #
 # Authors : Ewan le Bideau Canevet <ewan.lebideau-canevet@open.eurogiciel.org>
+#           Nicolas Zingile <nicolas.zingile@open.eurogiciel.org>
+
+source util.sh
 
 FILE=$1
-rm -rf ~guest/$FILE
+user=$(gettestuser)
+
+rm -rf /home/$user/$FILE

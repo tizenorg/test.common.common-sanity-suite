@@ -1,5 +1,5 @@
-#!/bin/bash -x
-
+#!/bin/bash
+#
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
 # as published by the Free Software Foundation; either version 2
@@ -14,27 +14,43 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 #
-# Authors : Ewan le Bideau Canevet <ewan.lebideau-canevet@open.eurogiciel.org>
-#           Nicolas Zingile <nicolas.zingile@open.eurogiciel.org>
+# Authors: Nicolas Zingile <nicolas.zingile@open.eurogiciel.org>
 
-source util.sh
 
-CMD="$@"
-tmpscript=$(mktemp)
-user=$(gettestuser)
-process=$(gettestprocess $user)
+#--- some util functions to retrieve test user ---#
 
-trap "rm -rf $tmpscript" INT QUIT TERM STOP EXIT
-echo "#!/bin/bash " > $tmpscript
-tr '\0' '\n' </proc/$(pgrep $process -u $user)/environ | awk 'FS="=" {if ($1 != "_") { print "export",$0;} }' >> $tmpscript
-echo export PATH=$QAPATH:\$PATH >> $tmpscript
-echo $CMD >> $tmpscript
-chmod 777 $tmpscript
+function gettestuser()
+{
+    local testuser=""
 
-su - $user -c $tmpscript
+    if [[ -n $(getent passwd guest) ]]; then
+	testuser=guest
+    elif [[ -n $(getent passwd app) ]]; then
+	testuser=app
+    else
+	echo "No suitable user" && exit 1
+    fi
 
-if [ $? -eq 0 ]; then
-	exit 0
-else
-	exit 1
-fi
+    echo $testuser 
+}
+
+function gettestprocess ()
+{
+    local testprocess=""
+    
+    if [[ -z $1 ]]; then
+	echo "A user should be defined" && exit 1
+    else
+	case $1 in
+	    "guest")
+		testprocess=tz-launcher
+		;;
+	    "app")
+		testprocess=weston-desktop
+		;;
+	    *)
+		echo "Cannot get the process" && exit 1
+	esac
+	echo $testprocess
+    fi
+}
